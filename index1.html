@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Dangrek&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contactiz">
+            <div class="contactiztitulo">
+                <h2>Contactanos</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="11bf8c4d-c573-4e71-88cc-2eada5edc216">
+            <input type="text" name="name" placeholder="Nombre" class="contactinput" required>
+            <input type="text" name="name" placeholder="Apellido" class="contactinput" required>
+            <input type="email" name="Email" placeholder="ejemplo@email.com" class="contactinput" required>
+            <textarea name="mensaje" placeholder="Tu Mensaje" class="contactinput"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="contactder">
+            <img src="imgs/bote.png" class="bote">
+        </div>
+
+    </div>
+</body>
+</html>

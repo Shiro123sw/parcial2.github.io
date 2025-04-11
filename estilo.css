@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "dangrek", serif;
+    background: linear-gradient(rgb(206, 205, 255),rgb(166, 218, 255));
+}
+.contenedor{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contactiz{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contactiztitulo h2{
+font-weight: 600;
+color: rgb(141, 91, 223);
+font-size: 40px;
+margin-bottom: 5px;
+}
+.contactiztitulo hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: rgb(141, 91, 223);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contactinput{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: rgb(75, 69, 189);
+    border-radius: 50px;
+    font-family: bellota;
+}
+.contactiz textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+    resize: none;
+}
+.contactinput:focus{
+    border: 2px solid rgb(141, 91, 223);
+}
+.contactinput::placeholder{
+    color: rgb(141, 91, 223);
+}
+.contactiz button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,rgb(255, 119, 101),rgb(255, 214, 138));
+}
+.contactder {
+    width: 300px;
+    animation: wave 2s ease-in-out infinite;
+    transform-origin: bottom center;
+  }
+  .contactder img{
+    width: 300px;
+  }
+  
+  @keyframes wave {
+    0%   { transform: rotate(-2deg); }
+  50%  { transform: rotate(3deg); }
+  100% { transform: rotate(-2deg); }
+  }
+  
